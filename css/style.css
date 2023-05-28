@@ -12,6 +12,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'EcoCare-Font01';
+  text-decoration: none;
+  color: #0B1B5C;
 }
 
 html,body{
@@ -108,6 +110,58 @@ padding: 10px 50px;
 font-family: EcoCare-Font01;
 color: white;
 margin: 0 5px;
+}
+
+.wrapper button:hover {
+background: #26EA8F;
+border-radius: 100px;
+border-style: none;
+padding: 10px 50px;
+font-family: EcoCare-Font01;
+color: white;
+margin: 0 5px;
+transition: 0.5s;
+}
+
+.tacbox {
+display: inline-flex;
+padding: 1em;
+margin: 2em;
+max-width: 900px;
+font-size: small;
+text-decoration: none;
+}
+
+
+input {
+  height: 2em;
+  width: 2em;
+  vertical-align: middle;
+  color: #0B1B5C;
+  text-decoration: none;
+}
+
+.show {
+  display: none;
+    text-decoration: none;
+    color: #0B1B5C;
+}
+
+.hide:target + .show {
+  display: inline;
+  text-decoration: none;
+}
+
+.box {
+  padding-left: 20px;
+  align-items: center;
+}
+
+
+@media print {
+  .hide, .show {
+    display: none;
+  }
 }
 
 
