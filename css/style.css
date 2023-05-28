@@ -13,7 +13,6 @@
   box-sizing: border-box;
   font-family: 'EcoCare-Font01';
   text-decoration: none;
-  color: #0B1B5C;
 }
 
 html,body{
@@ -158,11 +157,38 @@ input {
 }
 
 
+
 @media print {
   .hide, .show {
     display: none;
   }
 }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0B1B5C;
+  height: auto;
+  width: 100vw;
+  padding: 10px;
+  font-family: EcoCare-Font01;
+  padding-top: 40px;
+}
+
+.footer-content{
+  padding: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  height: 100px;
+  text-decoration: none;
+
+}
+
 
 
 
