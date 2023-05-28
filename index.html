@@ -1,47 +1,33 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecocare</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <script> 
-        document.addEventListener('contextmenu', event=> event.preventDefault()); 
-        document.onkeydown = function(e) { 
-        if(event.keyCode == 123) { 
-        return false; 
-        } 
-        if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){ 
-        return false; 
-        } 
-        if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){ 
-        return false; 
-        } 
-        if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){ 
-        return false; 
-        } 
-        } 
-        </script> 
-
-    <video autoplay muted loop id="myVideo">
-        <source src="assets/bg-video.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-      </video>
-      <div class="section">
-      <div class="content">
-
-        <div class="svg animate-opacity-1"><img src="assets/Ecocare Logo.svg"></div>
-
-        <div class="svg animate-opacity-2"><img src="assets/YHC.svg"></div>
-
-        <h1 class="title animate-opacity-3">Coming Soon</h1>
-
+  <video autoplay muted loop id="myVideo">
+    <source src="assets/bg-video.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <div class="wrapper">
+    <img src="assets/Ecocare Logo.svg" alt="Ecocare" srcset="" class="logo">
+    <div class="title">Your <span class="highlight">Healthcare</span> Companion</div>
+    <div class="subtitle">Coming Soon</div>
+    <form action="#" class="form">
+      <div class="email-field">
+        <div class="title">Stay tuned!<br><span>Subscribe to newsletter</span></div>
+        <input type="email" placeholder="Enter Email">
+        <button>Subscribe</button>
       </div>
-    </div>
-      
+    </form>
+  </div>
 </body>
-</html>l
+
+</html>
