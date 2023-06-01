@@ -2,6 +2,7 @@
   font-family: EcoCare-Font01;
   src: url(/Fonts/POLYSANS-MEDIAN.OTF);
 }
+
 @font-face {
   font-family: EcoCare-Font02;
   src: url(/Fonts/SUISSEWORKS-REGULARITALIC.OTF);
@@ -16,7 +17,8 @@
   color: #0B1B5C;
 }
 
-html, body {
+html,
+body {
   display: grid;
   height: 100%;
   width: 100%;
@@ -121,8 +123,6 @@ form .email-field input {
   color: white;
   margin: 0 5px;
   transition: 0.5s;
-  pointer-events: none;
-  opacity: 0.5;
 }
 
 .wrapper2 button:hover {
@@ -166,11 +166,13 @@ input[type="email"] {
   width: 1000px;
 }
 
-@media print {
-  .hide,
-  .show {
-    display: none;
-  }
+.error {
+  color: #0B1B5C;
+  margin-top: 5px;
+  font-size: 15px;
+  text-align: left;
+  padding: 20px 20px 20px 20px;
+  border-radius: 25px;
 }
 
 footer {
@@ -198,6 +200,13 @@ footer {
   color: #fff;
   height: 100px;
   text-decoration: none;
+}
+
+@media print {
+  .hide,
+  .show {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -386,46 +395,15 @@ footer {
     width: 355px;
   }
 
-  @media print {
-    .hide,
-    .show {
-      display: none;
+  @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+    html {
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      width: 100vh;
+      overflow-x: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
     }
-  }
-
-  footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #0B1B5C;
-    height: auto;
-    width: 100vw;
-    padding: 10px;
-    font-family: EcoCare-Font01;
-    padding-top: 40px;
-  }
-
-  .footer-content {
-    padding: 20px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-    height: 100px;
-    text-decoration: none;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
-  html {
-    transform: rotate(-90deg);
-    transform-origin: left top;
-    width: 100vh;
-    overflow-x: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
   }
 }
