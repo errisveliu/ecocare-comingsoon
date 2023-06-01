@@ -13,6 +13,7 @@
   box-sizing: border-box;
   font-family: 'EcoCare-Font01';
   text-decoration: none;
+  color: #0B1B5C;
 }
 
 html,body{
@@ -20,6 +21,7 @@ html,body{
   height: 100%;
   width: 100%;
   place-items: center;
+  align-content: center;
 }
 
 #myVideo {
@@ -37,6 +39,13 @@ html,body{
   padding: 0 50px;
   z-index: 1;
   width: 900px;
+}
+.wrapper2 {
+  max-width: 1000px;
+  text-align: center;
+  padding: 0 50px;
+  z-index: 1;
+  width: 1000px;
 }
 
 .wrapper .title {
@@ -61,25 +70,30 @@ padding: 10px 50px 10px 50px;
 width: 500px;
 }
 
-.wrapper form {
+.wrapper2 form {
   margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+
 
 }
 
-.wrapper form {
+.wrapper2 form {
   margin: 50px 0px;
 text-align: start;
 
 }
 
-.wrapper .email-field .title {
+.wrapper2 .email-field .title {
   font-size: 22px;
 }
-.wrapper .email-field span {
+.wrapper2 .email-field span {
   font-size: 12px;
 }
 
-.wrapper form .email-field  {
+.wrapper2 form .email-field  {
   height: 50px;
   width: 100%;
   display: flex;
@@ -101,17 +115,18 @@ border: 1px solid #DBEDFB;
 border-radius: 100px;
 }
 
-.wrapper button {
+.wrapper2 button {
   background: #FC5E4D;
   border-radius: 100px;
+  width: 700px;
 border-style: none;
-padding: 10px 50px;
+padding: 10px 10px;
 font-family: EcoCare-Font01;
 color: white;
 margin: 0 5px;
 }
 
-.wrapper button:hover {
+.wrapper2 button:hover {
 background: #26EA8F;
 border-radius: 100px;
 border-style: none;
@@ -122,14 +137,7 @@ margin: 0 5px;
 transition: 0.5s;
 }
 
-.tacbox {
-display: inline-flex;
-padding: 1em;
-margin: 2em;
-max-width: 900px;
-font-size: small;
-text-decoration: none;
-}
+
 
 
 input {
@@ -152,8 +160,10 @@ input {
 }
 
 .box {
-  padding-left: 20px;
   align-items: center;
+  padding-top: 20px;
+  text-align: center;
+  width: 1000px;
 }
 
 
@@ -189,7 +199,208 @@ footer {
 
 }
 
+@media only screen and (max-width: 600px) {
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'EcoCare-Font01';
+    text-decoration: none;
+  }
+  
+  html,body{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: 0;
+  }
+  
+  .wrapper {
+    max-width: 400px;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    margin-top: -100px ;
+    z-index: 1;
+    width: 400px;
+  }
+  .wrapper2 {
+    max-width: 400px;
+    text-align: center;
+    padding: 10px;
+    z-index: 1;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .wrapper .title {
+    font-size: 35px;
+    color: #0B1B5C;
+    width: 100%;
+  }
+  .wrapper .subtitle {
+    padding-top: 10px;
+    font-size: 15px;
+    color: #0B1B5C;
+    width: 100%;
+  }
+  
+  .wrapper .highlight {
+    color: #3128FF;
+    font-family: EcoCare-Font02;
+  }
+  
+  .wrapper .logo {
+  padding: 10px 0px 10px 0px;
+  width: 300px;
+  padding-bottom: 50px;
+  }
+  
+  .wrapper2 form {
+    margin: 0px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  
+  .wrapper2 form {
+    margin: 50px 0px;
+  text-align: start;
+  
+  }
+  
+  .wrapper2 .email-field .title {
+    font-size: 22px;
+    padding: 20px;
 
+  }
+  .wrapper2 .email-field span {
+    font-size: 12px;
+  }
+  
+  .wrapper2 form .email-field  {
+background-color: transparent;
+display: flex;
+flex-direction: column;
+    align-items: center;
+    justify-content: center;
+border-radius: 25px;
+padding: 40px;
+  }
+  
+  form .email-field input {
+  width: 100%;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 100px;
+  background: #FFFFFF;
+  border: 1px solid #DBEDFB;
+  border-radius: 100px;
+  }
+  
+  .wrapper2 button {
+    background: #FC5E4D;
+    border-radius: 100px;
+    width: 300px;
+  border-style: none;
+  padding: 10px 10px;
+  font-family: EcoCare-Font01;
+  color: white;
+  margin: 0px;
+  }
+  
+  .wrapper2 button:hover {
+  background: #26EA8F;
+  border-radius: 100px;
+  border-style: none;
+  padding: 10px 50px;
+  font-family: EcoCare-Font01;
+  color: white;
+  margin: 0 5px;
+  transition: 0.5s;
+  }
+  
+  
+  
+  
+  input {
+    height: 2em;
+    width: 2em;
+    vertical-align: middle;
+    color: #0B1B5C;
+    text-decoration: none;
+  }
+  
+  .show {
+    display: none;
+      text-decoration: none;
+      color: #0B1B5C;
+  }
+  
+  .hide:target + .show {
+    display: inline;
+    text-decoration: none;
+  }
+  
+  .box {
+    align-items: center;
+    padding-top: 100px;
+    text-align: center;
+    width: 355px;
+
+  }
+  
+  
+  
+  @media print {
+    .hide, .show {
+      display: none;
+    }
+  }
+  
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0B1B5C;
+    height: auto;
+    width: 100vw;
+    padding: 10px;
+    font-family: EcoCare-Font01;
+    padding-top: 40px;
+  }
+  
+  .footer-content{
+    padding: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    height: 100px;
+    text-decoration: none;
+  
+  }
+
+
+}
 
 
 
