@@ -88,6 +88,7 @@ text-align: start;
 
 .wrapper2 .email-field .title {
   font-size: 22px;
+  display: none;
 }
 .wrapper2 .email-field span {
   font-size: 12px;
@@ -185,6 +186,9 @@ footer {
   padding: 10px;
   font-family: EcoCare-Font01;
   padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-content{
@@ -403,7 +407,17 @@ padding: 40px;
 }
 
 
-
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
 
 
 
