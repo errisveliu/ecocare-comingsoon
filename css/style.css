@@ -128,17 +128,26 @@ margin: 0 5px;
 }
 
 .wrapper2 button:hover {
-background: #26EA8F;
+background: #ff988d;
 border-radius: 100px;
 border-style: none;
-padding: 10px 50px;
+padding: 10px 10px;
 font-family: EcoCare-Font01;
 color: white;
 margin: 0 5px;
 transition: 0.5s;
 }
 
-
+.wrapper2 button:focus {
+  background: #26EA8F;
+  border-radius: 100px;
+  border-style: none;
+  padding: 10px 50px;
+  font-family: EcoCare-Font01;
+  color: white;
+  margin: 0 5px;
+  transition: 0.5s;
+  }
 
 
 input {
