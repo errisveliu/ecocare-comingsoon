@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
         newsletterButton.textContent = 'Newsletter abonnieren';
         newsletterButton.style.backgroundColor = '#FC5E4D';
         isSubscribed = false;
+        newsletterButton.disabled = true; 
       } else {
         newsletterButton.textContent = 'Abonniert';
         isSubscribed = true;
