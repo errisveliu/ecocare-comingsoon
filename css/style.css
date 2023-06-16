@@ -47,6 +47,16 @@ html, body{
   padding: 10px;
 }
 
+#mc_embed_signup input.mce_inline_error {
+  width: 60%;
+  background-color: transparent;
+  color: #0B1B5C;
+  font-size: 10px;
+  font-weight: 100;
+  padding: 10px;
+  border-color: #0B1B5C !important;
+}
+
 
 
 html,
